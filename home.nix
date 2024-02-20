@@ -13,7 +13,7 @@
     ./features/font.nix # font config
   ];
 
-  config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
 
   home = {
     username = "damaru";

@@ -2,7 +2,7 @@
 {
   programs.zathura = {
     enable = true;
-    package = pkgs.unstable.zathura;
+    package = pkgs.zathura;
     extraConfig = ''
       set window-title-basename "true"
       set selection-clipboard "clipboard"

@@ -1,7 +1,7 @@
 { pkgs, config, ... }:
 {
   programs.waybar = {
-    package = pkgs.unstable.waybar;
+    package = pkgs.waybar;
     enable = true;
 
     settings = {
