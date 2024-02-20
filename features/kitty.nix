@@ -2,7 +2,6 @@
 {
   programs.kitty = {
     enable = true;
-    package = pkgs.kitty;
     font = {
       name = "CaskaydiaCoveNerdFont";
       size = 18;

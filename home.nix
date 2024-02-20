@@ -3,7 +3,7 @@
   imports = [
     ./features/hypr.nix # window manager config
     ./features/kitty.nix # terminal emulator config
-    ./features/neovim.nix # editor config
+    ./features/nvim.nix # editor config
     ./features/zsh.nix # shell config
     ./features/rofi.nix # app launcher config
     ./features/waybar.nix # status bar config
@@ -25,6 +25,7 @@
       wl-clipboard # clipboard for wayland
       pavucontrol # volume control
       htop-vim # task viewer
+      slack # communication
 
       # for neovim
       ripgrep

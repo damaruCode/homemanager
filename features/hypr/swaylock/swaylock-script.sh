@@ -1,0 +1,34 @@
+swaylock \
+	--screenshots \
+	--clock \
+	--indicator \
+    --timestr "%H:%M" \
+    --datestr "%e.%m.%y" \
+	--indicator-radius 150 \
+	--indicator-thickness 15 \
+    --effect-pixelate 10 \
+	--effect-vignette 0.4:0.4 \
+    --font "CaskaydiaCoveNerdFont" \
+    --font-size 65\
+    --text-color 00c800cc \
+    --text-clear-color ffff00 \
+    --text-wrong-color ff0000 \
+    --text-ver-color 00aaffcc \
+	--ring-color 00c800cc \
+    --ring-clear-color ffff00 \
+    --ring-wrong-color ff0000 \
+    --ring-ver-color 00aaffcc \
+	--line-color 009600cc \
+    --line-clear-color ffff00 \
+    --line-wrong-color ff0000 \
+    --line-ver-color 00aaffcc \
+	--inside-color 00000088 \
+    --inside-clear-color 00000088 \
+    --inside-wrong-color 00000088 \
+    --inside-ver-color 00000088 \
+	--separator-color 00000000 \
+    --key-hl-color 00ff00 \
+    --show-failed-attempts \
+    --fade-in 3 \
+	--grace 3 \
+    --daemonize \
