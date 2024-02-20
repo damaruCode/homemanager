@@ -9,11 +9,12 @@
     };
     shellAliases = {
       # Nix 
-      uos = "sudo nixos-rebuild switch --flake .";
-      uhm = "home-manager switch --flake .";
+      uos = "sudo nixos-rebuild switch --flake ~/.config/nixos";
+      uhm = "home-manager switch --flake ~/.config/home-manager";
+      nv = "nix run ~/.config/nix-vim";
 
       # System  
-      ll = "ls -lah";
+      la = "ls -lah";
       c = "clear";
 
       # Editor
