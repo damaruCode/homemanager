@@ -1,11 +1,11 @@
-{ inputs, outputs, lib, config, pkgs, ... }:
+{ inputs, pkgs, ... }:
 {
-
   imports = [
+    ./features/hypr.nix # window manager config
     ./features/kitty.nix # terminal emulator config
+    ./features/neovim.nix # editor config
     ./features/zsh.nix # shell config
     ./features/rofi.nix # app launcher config
-    ./features/neovim.nix # editor config
     ./features/waybar.nix # status bar config
     ./features/zathura.nix # pdf reader config
     ./features/feh.nix # img viewer config
@@ -35,10 +35,7 @@
       EDITOR = "nvim";
     };
   };
-
   systemd.user.startServices = "sd-switch";
-
   home.stateVersion = "23.11";
-
   programs.home-manager.enable = true;
 }
