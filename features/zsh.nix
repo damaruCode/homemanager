@@ -15,6 +15,7 @@
 
       # System  
       la = "ls -lah";
+      o = "xdg-open";
       c = "clear";
 
       # Editor
@@ -22,6 +23,7 @@
 
       # Applications
       z = "zathura";
+      f = "feh";
     
       # Git 
       gs = "git status";
@@ -29,8 +31,11 @@
       gA = "git add -A";
       gc = "git commit";
       gcm = "git commit -m";
+      gf = "git fetch";
       gpu = "git push";
       gpl = "git pull";
+      gco = "git checkout";
+      gb = "git branch";
     };
   };
 }
