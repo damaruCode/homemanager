@@ -20,7 +20,6 @@
     username = "damaru";
     homeDirectory = "/home/damaru";
     packages = with pkgs; [
-      brave # browser
       hyprpaper # wallpaper daemon
       swaylock-effects # screen locker
       wl-clipboard # clipboard for wayland
@@ -28,6 +27,7 @@
       htop-vim # task viewer
 
       # standalone apps
+      brave # browser
       slack # communication
       discord # communication
 
@@ -35,10 +35,6 @@
       ripgrep
       tree-sitter
     ];
-
-    sessionVariables = {
-      EDITOR = "nvim";
-    };
   };
 
   systemd.user.startServices = "sd-switch";
