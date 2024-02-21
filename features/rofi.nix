@@ -2,8 +2,6 @@
 {
   programs.rofi = {
     enable = true;
-    font = "CaskaydiaCoveNerdFont 18";
-    location = "bottom-left";
     theme = "custom-theme.rasi";
   };
       

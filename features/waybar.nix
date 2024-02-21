@@ -1,7 +1,6 @@
 { pkgs, config, ... }:
 {
   programs.waybar = {
-    package = pkgs.waybar;
     enable = true;
 
     settings = {
@@ -116,7 +115,7 @@
     style = ''
       * {
       	font-size: 24px;
-      	font-family: "JetBrains Nerd Font Mono", monospace;
+      	font-family: "CaskaydiaCoveNerdFont", monospace;
         font-weight: bold;
       }
 
