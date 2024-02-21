@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     xdg-utils
   ];
+
   xdg.mimeApps = {
     enable = true;
     associations.added = {

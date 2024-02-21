@@ -4,9 +4,14 @@
     enable = true;
     enableNvidiaPatches = true;
     extraConfig = ''
-    ${builtins.readFile ./hypr/hyprland.conf}
+      ${builtins.readFile ./hypr/hyprland.conf}
     '';
   };
+
+  packages = with pkgs; [
+    swaylock-effects
+    hyprpaper
+  ];
 
   home.file.".config/hypr/hyprpaper.conf".source = ./hypr/hyprpaper.conf;
   home.file.".config/hypr/wallpaper.jpg".source = ./hypr/wallpaper.jpg;

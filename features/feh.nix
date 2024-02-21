@@ -14,4 +14,17 @@
       categories = [ "Graphics" ];
     };
   };
+
+  xdg.mimeApps = {
+    associations.added = {
+      "image/jpeg" = [ "feh.desktop" ];
+      "image/png" = [ "feh.desktop" ];
+      "image/bmp" = [ "feh.desktop" ];
+    };
+    defaultApplications = {
+      "image/jpeg" = [ "feh.desktop" ];
+      "image/png" = [ "feh.desktop" ];
+      "image/bmp" = [ "feh.desktop" ];
+    };
+  };
 }

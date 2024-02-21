@@ -10,7 +10,8 @@
     ./features/zathura.nix # pdf reader config
     ./features/feh.nix # img viewer config
     ./features/xdg.nix # defaults programs for file endings
-    ./features/font.nix # font config
+    ./features/fonts.nix # font config
+    ./features/compilers.nix # compiler config
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -33,9 +34,6 @@
       # for neovim
       ripgrep
       tree-sitter
-
-      # compiler
-      (python3.withPackages(ps: with ps; [ dbus-python ]))
     ];
 
     sessionVariables = {

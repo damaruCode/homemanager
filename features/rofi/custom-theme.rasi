@@ -1,8 +1,8 @@
 * {
-    background-color:      Black;
-    border-color:          White;
-    text-color:           White;
-    font:            "Times New Roman 12";
+    background-color:   Black;
+    border-color:       White;
+    text-color:         White;
+    font:               "CaskaydiaCoveNerdFont";
 }
 
 #window {
