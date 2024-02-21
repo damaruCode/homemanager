@@ -66,7 +66,6 @@
       texlab # latex
 
       # formater
-      nixpkgs-fmt # nix
       luaformatter # lua
       rustfmt # rust
     ];
