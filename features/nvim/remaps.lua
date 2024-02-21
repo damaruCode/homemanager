@@ -7,7 +7,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
 -- rust
-vim.keymap.set("n", "<leader>cr", "<cmd>! cargo run -q<CR>")
+vim.keymap.set("n", "<leader>cr", "<cmd>! cargo run -q --release<CR>")
 
 -- vimtex 
 vim.keymap.set("n", "<leader>vc", "<cmd>VimtexCompile<CR>")

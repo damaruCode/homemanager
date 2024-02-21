@@ -1,4 +1,3 @@
-{ pkgs, config, ... }:
 {
   programs.zsh = {
     enable = true;
@@ -11,6 +10,8 @@
       # Nix 
       uos = "sudo nixos-rebuild switch --flake ~/.config/nixos";
       uhm = "home-manager switch --flake ~/.config/home-manager";
+      ns = "nix-shell";
+      ne = "nix-env";
       nv = "nix run ~/.config/nix-vim";
 
       # System  

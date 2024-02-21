@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   programs.neovim = {
     enable = true;
@@ -16,47 +16,18 @@
       ${builtins.readFile ./nvim/plugins/comment.lua}
       ${builtins.readFile ./nvim/plugins/lspzero.lua}
     '';
+
     plugins = with pkgs.vimPlugins; [
-
-      # theme
-      tokyonight-nvim
-
-      # highlight code
-      (nvim-treesitter.withPlugins (p: [
-        p.tree-sitter-nix
-        p.tree-sitter-lua
-        p.tree-sitter-rust
-        p.tree-sitter-cpp
-        p.tree-sitter-c_sharp
-        p.tree-sitter-latex
-      ]))
-
-      # status bar
-      lualine-nvim
-
-      # search for files
-      telescope-nvim
-
-      # store and move to files
-      harpoon
-
-      # browse undo branches 
-      undotree
-
-      # toggle git
-      vim-fugitive
-
-      # comment short cuts
-      comment-nvim
-
-      # copilot
-      copilot-vim
-
-      # note taking 
-      # obsidian.vim
-
-      # latex
-      vimtex
+      tokyonight-nvim # theme
+      lualine-nvim # status bar
+      telescope-nvim # fuzzy finder
+      harpoon # save and jump to projects
+      undotree # save change history
+      vim-fugitive # toggle git
+      comment-nvim # comment code
+      copilot-vim # autocomplete ai
+      vimtex # latex support
+      # obsidian.vim # note taking 
 
       # lsp
       lsp-zero-nvim
@@ -64,24 +35,44 @@
       nvim-cmp
       cmp-nvim-lsp
       luasnip
+
+      # highlighter
+      (nvim-treesitter.withPlugins (p: [
+        p.tree-sitter-nix
+        p.tree-sitter-lua
+        p.tree-sitter-cpp
+        p.tree-sitter-rust
+        p.tree-sitter-latex
+      ]))
     ];
 
     extraPackages = with pkgs; [
-      rnix-lsp
-      clang-tools
-      csharp-ls
-      lua-language-server
-      rust-analyzer
-      texlab
+      ripgrep
+      tree-sitter
+
+      # languages
+      lua
+      cmake
+      gcc
+      cargo
+      rustc
+      texliveFull
+
+      # lsp
+      nil # nix
+      lua-language-server # lua
+      clang-tools # c/c++
+      rust-analyzer # rust
+      texlab # latex
+
+      # formater
+      nixpkgs-fmt # nix
+      luaformatter # lua
+      rustfmt # rust
     ];
 
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
   };
-
-  home.packages = with pkgs; [
-    ripgrep
-    tree-sitter
-  ];
 }
