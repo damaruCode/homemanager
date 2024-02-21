@@ -79,4 +79,9 @@
     vimAlias = true;
     vimdiffAlias = true;
   };
+
+  home.packages = with pkgs; [
+    ripgrep
+    tree-sitter
+  ];
 }

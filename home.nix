@@ -11,7 +11,8 @@
     ./features/feh.nix # img viewer config
     ./features/xdg.nix # defaults programs for file endings
     ./features/fonts.nix # font config
-    ./features/compilers.nix # compiler config
+    ./features/python.nix # python config
+    ./features/rust.nix # rust config
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -20,8 +21,7 @@
     username = "damaru";
     homeDirectory = "/home/damaru";
     packages = with pkgs; [
-      hyprpaper # wallpaper daemon
-      swaylock-effects # screen locker
+      # utils
       wl-clipboard # clipboard for wayland
       pavucontrol # volume control
       htop-vim # task viewer
