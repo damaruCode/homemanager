@@ -11,8 +11,7 @@
     ./features/feh.nix # img viewer config
     ./features/xdg.nix # defaults programs for file endings
     ./features/fonts.nix # font config
-    ./features/python.nix # python config
-    ./features/rust.nix # rust config
+    ./features/eduroam.nix # eduroam config
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -21,19 +20,15 @@
     username = "damaru";
     homeDirectory = "/home/damaru";
     packages = with pkgs; [
-      # utils
-      wl-clipboard # clipboard for wayland
-      pavucontrol # volume control
-      htop-vim # task viewer
-
       # standalone apps
       brave # browser
       slack # communication
       discord # communication
 
-      # for neovim
-      ripgrep
-      tree-sitter
+      # utils
+      htop-vim # task viewer
+      pavucontrol # volume control
+      wl-clipboard # clipboard for wayland
     ];
   };
 
