@@ -25,17 +25,24 @@
       wl-clipboard # clipboard for wayland
       pavucontrol # volume control
       htop-vim # task viewer
+
+      # standalone apps
       slack # communication
+      discord # communication
 
       # for neovim
       ripgrep
       tree-sitter
+
+      # compiler
+      (python3.withPackages(ps: with ps; [ dbus-python ]))
     ];
 
     sessionVariables = {
       EDITOR = "nvim";
     };
   };
+
   systemd.user.startServices = "sd-switch";
   home.stateVersion = "23.11";
   programs.home-manager.enable = true;

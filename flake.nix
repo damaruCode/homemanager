@@ -12,6 +12,7 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+    # nix-vim.url = "github:damaruCode/nix-vim";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
