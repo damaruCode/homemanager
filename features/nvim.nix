@@ -59,13 +59,14 @@
       texliveFull
 
       # lsp
-      nil # nix
+      rnix-lsp # nix
       lua-language-server # lua
       clang-tools # c/c++
       rust-analyzer # rust
       texlab # latex
 
       # formater
+      nixpkgs-fmt # nix
       luaformatter # lua
       rustfmt # rust
     ];

@@ -35,7 +35,7 @@ local default_setup = function(server)
     })
 end
 
-default_setup('nil_ls')
+default_setup('rnix')
 default_setup('lua_ls')
 default_setup('clangd')
 default_setup('rust_analyzer')
