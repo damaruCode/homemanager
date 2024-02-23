@@ -35,6 +35,7 @@
       # standalone apps
       brave # browser
       slack # communication
+      figma-linux # design
       discord # communication
 
       # utils
