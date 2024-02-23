@@ -1,5 +1,17 @@
-{ pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 {
+
+  nixpkgs.overlays = [
+    (final: prev: {
+      vimPlugins = prev.vimPlugins // {
+        vim-razor = prev.vimUtils.buildVimPlugin {
+          name = "vim-razor";
+          src = inputs.plugin-vim-razor;
+        };
+      };
+    })
+  ];
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -43,7 +55,10 @@
         p.tree-sitter-cpp
         p.tree-sitter-rust
         p.tree-sitter-latex
+        p.tree-sitter-c_sharp
       ]))
+
+      vim-razor
     ];
 
     extraPackages = with pkgs; [
@@ -64,6 +79,7 @@
       clang-tools # c/c++
       rust-analyzer # rust
       texlab # latex
+      csharp-ls # c#
 
       # formater
       nixpkgs-fmt # nix

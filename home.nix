@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 {
   imports = [
     ./features/hypr.nix # window manager config
@@ -15,6 +15,18 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
+
+  # for vim-razor in nvim
+  nixpkgs.overlays = [
+    (final: prev: {
+      vimPlugins = prev.vimPlugins // {
+        vim-razor = prev.vimUtils.buildVimPlugin {
+          name = "vim-razor";
+          src = inputs.plugin-vim-razor;
+        };
+      };
+    })
+  ];
 
   home = {
     username = "damaru";

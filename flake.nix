@@ -12,14 +12,17 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+    plugin-vim-razor.url = "github:jlcrochet/vim-razor";
+    plugin-vim-razor.flake = false;
+
     # nix-vim.url = "github:damaruCode/nix-vim";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
     homeConfigurations = {
-      specialArgs = { inherit inputs; };
       "damaru" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs { system = "x86_64-linux"; };
+        extraSpecialArgs = { inherit inputs; };
         modules = [
           ./home.nix
         ];

@@ -40,6 +40,7 @@ default_setup('lua_ls')
 default_setup('clangd')
 default_setup('rust_analyzer')
 default_setup('texlab')
+default_setup('csharp_ls')
 
 local cmp = require('cmp')
 

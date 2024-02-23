@@ -164,12 +164,29 @@
         "type": "github"
       }
     },
+    "plugin-vim-razor": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1706466102,
+        "narHash": "sha256-F2qo/gwTrcJjLfTixOmY7lxLsRwbX3AEHyxDLBc4SZw=",
+        "owner": "jlcrochet",
+        "repo": "vim-razor",
+        "rev": "3fcc140db220aff169d77c5d8314a088dd161245",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jlcrochet",
+        "repo": "vim-razor",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "plugin-vim-razor": "plugin-vim-razor"
       }
     },
     "systems": {
