@@ -47,6 +47,7 @@
       nvim-cmp
       cmp-nvim-lsp
       luasnip
+      omnisharp-extended-lsp-nvim # c# lsp
 
       # highlighter
       (nvim-treesitter.withPlugins (p: [
@@ -72,6 +73,7 @@
       cargo
       rustc
       texliveFull
+      dotnet-sdk_8
 
       # lsp
       rnix-lsp # nix
@@ -79,7 +81,8 @@
       clang-tools # c/c++
       rust-analyzer # rust
       texlab # latex
-      csharp-ls # c#
+      omnisharp-roslyn # c# 
+      # csharp-ls # c#
 
       # formater
       nixpkgs-fmt # nix
@@ -91,4 +94,6 @@
     vimAlias = true;
     vimdiffAlias = true;
   };
+
+  home.file.".omnisharp/omnisharp.json".source = ./nvim/plugins/omnisharp.json;
 }
