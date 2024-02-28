@@ -42,6 +42,11 @@
       htop-vim # task viewer
       pavucontrol # volume control
       wl-clipboard # clipboard for wayland
+
+      # minecraft create
+      prismlauncher
+      jdk17
+
     ];
   };
 
