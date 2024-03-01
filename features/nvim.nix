@@ -1,12 +1,15 @@
 { config, pkgs, inputs, ... }:
 {
-
   nixpkgs.overlays = [
     (final: prev: {
       vimPlugins = prev.vimPlugins // {
         vim-razor = prev.vimUtils.buildVimPlugin {
           name = "vim-razor";
           src = inputs.plugin-vim-razor;
+        };
+        obsidian-nvim = prev.vimUtils.buildVimPlugin {
+          name = "obsidian-nvim";
+          src = inputs.plugin-obsidian-nvim;
         };
       };
     })
@@ -39,7 +42,7 @@
       comment-nvim # comment code
       copilot-vim # autocomplete ai
       vimtex # latex support
-      # obsidian.vim # note taking 
+      plenary-nvim # dependency for telescope and obsidian
 
       # lsp
       lsp-zero-nvim
@@ -57,9 +60,12 @@
         p.tree-sitter-rust
         p.tree-sitter-latex
         p.tree-sitter-c_sharp
+        p.tree-sitter-markdown
       ]))
 
+      # overlays
       vim-razor
+      obsidian-nvim
     ];
 
     extraPackages = with pkgs; [
@@ -82,7 +88,6 @@
       rust-analyzer # rust
       texlab # latex
       omnisharp-roslyn # c# 
-      # csharp-ls # c#
 
       # formater
       nixpkgs-fmt # nix

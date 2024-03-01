@@ -15,6 +15,9 @@
     plugin-vim-razor.url = "github:jlcrochet/vim-razor";
     plugin-vim-razor.flake = false;
 
+    plugin-obsidian-nvim.url = "github:epwalsh/obsidian.nvim";
+    plugin-obsidian-nvim.flake = false;
+
     # nix-vim.url = "github:damaruCode/nix-vim";
   };
 

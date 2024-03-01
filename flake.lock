@@ -164,6 +164,22 @@
         "type": "github"
       }
     },
+    "plugin-obsidian-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1709255955,
+        "narHash": "sha256-CIr9qDzx8DDrFUYFUly8npYs1W7GKSrnCv7lRfdSsEo=",
+        "owner": "epwalsh",
+        "repo": "obsidian.nvim",
+        "rev": "c7812abe3ab5c6a6a8b29a9ec08b32142a2e7011",
+        "type": "github"
+      },
+      "original": {
+        "owner": "epwalsh",
+        "repo": "obsidian.nvim",
+        "type": "github"
+      }
+    },
     "plugin-vim-razor": {
       "flake": false,
       "locked": {
@@ -186,6 +202,7 @@
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
         "nixpkgs": "nixpkgs_2",
+        "plugin-obsidian-nvim": "plugin-obsidian-nvim",
         "plugin-vim-razor": "plugin-vim-razor"
       }
     },

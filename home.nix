@@ -16,16 +16,8 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  # for vim-razor in nvim
-  nixpkgs.overlays = [
-    (final: prev: {
-      vimPlugins = prev.vimPlugins // {
-        vim-razor = prev.vimUtils.buildVimPlugin {
-          name = "vim-razor";
-          src = inputs.plugin-vim-razor;
-        };
-      };
-    })
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0" # for obsidian
   ];
 
   home = {
@@ -37,6 +29,7 @@
       slack # communication
       figma-linux # design
       discord # communication
+      obsidian # note taking
 
       # utils
       htop-vim # task viewer
