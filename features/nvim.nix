@@ -30,6 +30,7 @@
       ${builtins.readFile ./nvim/plugins/fugitive.lua}
       ${builtins.readFile ./nvim/plugins/comment.lua}
       ${builtins.readFile ./nvim/plugins/lspzero.lua}
+      ${builtins.readFile ./nvim/plugins/obsidian.lua}
     '';
 
     plugins = with pkgs.vimPlugins; [
