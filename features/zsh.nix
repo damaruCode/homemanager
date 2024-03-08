@@ -33,7 +33,7 @@
       gc = "git commit";
       gcm = "git commit -m";
       gf = "git fetch";
-      gpu = "git push";
+      gp = "git push";
       gpl = "git pull";
       gco = "git checkout";
       gb = "git branch";
