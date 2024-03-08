@@ -32,6 +32,7 @@
       webcord # discord in browser
       obsidian # note taking
       libreoffice # office suite
+      gnuplot # plotting
 
       # utils
       htop-vim # task viewer
