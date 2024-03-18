@@ -83,7 +83,8 @@
       dotnet-sdk_8
 
       # lsp
-      rnix-lsp # nix
+      nil # nix
+      # rnix-lsp # nix (not working because of dependency unsafe)
       lua-language-server # lua
       clang-tools # c/c++
       rust-analyzer # rust

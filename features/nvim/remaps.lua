@@ -6,6 +6,9 @@ vim.g.mapleader = " "
 -- open file explorer
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
+-- sort 
+vim.keymap.set("n", "<leader>s", "<cmd>sort n<CR>")
+
 -- rust
 vim.keymap.set("n", "<leader>cr", "<cmd>! cargo run -q --release<CR>")
 

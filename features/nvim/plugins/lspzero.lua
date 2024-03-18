@@ -92,12 +92,11 @@ local config = {
 
 require('lspconfig').omnisharp.setup(config)
 
-default_setup('rnix')
+default_setup('nil_ls')
+-- default_setup('rnix')
 default_setup('clangd')
 default_setup('rust_analyzer')
 default_setup('texlab')
--- default_setup('csharp_ls')
-
 
 local cmp = require('cmp')
 

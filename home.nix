@@ -12,6 +12,8 @@
     ./features/xdg.nix # defaults programs for file endings
     ./features/fonts.nix # font config
     ./features/eduroam.nix # eduroam config
+    ./features/minecraft.nix # minecraft config
+    ./features/lutris.nix # game manager config
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -33,16 +35,13 @@
       obsidian # note taking
       libreoffice # office suite
       gnuplot # plotting
+      inkscape # vector graphics
+      gimp # image editing
 
       # utils
       htop-vim # task viewer
       pavucontrol # volume control
       wl-clipboard # clipboard for wayland
-
-      # minecraft create
-      prismlauncher
-      jdk17
-
     ];
   };
 
