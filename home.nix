@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   imports = [
     ./features/hypr.nix # window manager config
@@ -37,6 +37,8 @@
       gnuplot # plotting
       inkscape # vector graphics
       gimp # image editing
+      krita # digital painting
+      vlc # media player
 
       # utils
       htop-vim # task viewer

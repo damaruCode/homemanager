@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ pkgs, inputs, ... }:
 {
   nixpkgs.overlays = [
     (final: prev: {
@@ -54,15 +54,17 @@
       omnisharp-extended-lsp-nvim # c# lsp
 
       # highlighter
-      (nvim-treesitter.withPlugins (p: [
-        p.tree-sitter-nix
-        p.tree-sitter-lua
-        p.tree-sitter-cpp
-        p.tree-sitter-rust
-        p.tree-sitter-latex
-        p.tree-sitter-c_sharp
-        p.tree-sitter-markdown
-      ]))
+      # (nvim-treesitter.withPlugins (p: [
+      #   p.tree-sitter-nix
+      #   p.tree-sitter-lua
+      #   p.tree-sitter-cpp
+      #   p.tree-sitter-rust
+      #   p.tree-sitter-latex
+      #   p.tree-sitter-c_sharp
+      #   p.tree-sitter-markdown
+      # ]))
+
+      nvim-treesitter.withAllGrammars
 
       # overlays
       vim-razor
