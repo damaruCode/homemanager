@@ -3,10 +3,6 @@
   nixpkgs.overlays = [
     (final: prev: {
       vimPlugins = prev.vimPlugins // {
-        vim-razor = prev.vimUtils.buildVimPlugin {
-          name = "vim-razor";
-          src = inputs.plugin-vim-razor;
-        };
         obsidian-nvim = prev.vimUtils.buildVimPlugin {
           name = "obsidian-nvim";
           src = inputs.plugin-obsidian-nvim;
@@ -51,23 +47,10 @@
       nvim-cmp
       cmp-nvim-lsp
       luasnip
-      omnisharp-extended-lsp-nvim # c# lsp
-
-      # highlighter
-      # (nvim-treesitter.withPlugins (p: [
-      #   p.tree-sitter-nix
-      #   p.tree-sitter-lua
-      #   p.tree-sitter-cpp
-      #   p.tree-sitter-rust
-      #   p.tree-sitter-latex
-      #   p.tree-sitter-c_sharp
-      #   p.tree-sitter-markdown
-      # ]))
 
       nvim-treesitter.withAllGrammars
 
-      # overlays
-      vim-razor
+      # from overlays
       obsidian-nvim
     ];
 
@@ -82,7 +65,6 @@
       cargo
       rustc
       texliveFull
-      dotnet-sdk_8
 
       # lsp
       nil # nix
@@ -103,6 +85,4 @@
     vimAlias = true;
     vimdiffAlias = true;
   };
-
-  home.file.".omnisharp/omnisharp.json".source = ./nvim/plugins/omnisharp.json;
 }

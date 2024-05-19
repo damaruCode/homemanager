@@ -39,6 +39,7 @@
       gimp # image editing
       krita # digital painting
       vlc # media player
+      drawio # diagramming
 
       # utils
       htop-vim # task viewer

@@ -15,9 +15,9 @@
       nv = "nix run ~/.config/nix-vim";
 
       # System  
-      la = "ls -lah";
       o = "xdg-open";
       c = "clear";
+      t = "tree";
 
       # Editor
       n = "nvim";
