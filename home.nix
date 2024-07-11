@@ -12,8 +12,6 @@
     ./features/xdg.nix # defaults programs for file endings
     ./features/fonts.nix # font config
     ./features/eduroam.nix # eduroam config
-    ./features/minecraft.nix # minecraft config
-    ./features/lutris.nix # game manager config
   ];
 
   nixpkgs.config.allowUnfree = true;
