@@ -5,25 +5,25 @@ vim.g.mapleader = " "
 
 -- remap up, down, left, right to vim keys
 
-vim.keymap.set("n", "m", "h", { noremap = true })
-vim.keymap.set("n", "n", "j", { noremap = true })
-vim.keymap.set("n", "e", "k", { noremap = true })
-vim.keymap.set("n", "i", "l", { noremap = true })
-
-vim.keymap.set("n", "h", "m", { noremap = true })
-vim.keymap.set("n", "j", "n", { noremap = true })
-vim.keymap.set("n", "k", "e", { noremap = true })
-vim.keymap.set("n", "l", "i", { noremap = true })
-
-vim.keymap.set("v", "m", "h", { noremap = true })
-vim.keymap.set("v", "n", "j", { noremap = true })
-vim.keymap.set("v", "e", "k", { noremap = true })
-vim.keymap.set("v", "i", "l", { noremap = true })
-
-vim.keymap.set("v", "h", "m", { noremap = true })
-vim.keymap.set("v", "j", "n", { noremap = true })
-vim.keymap.set("v", "k", "e", { noremap = true })
-vim.keymap.set("v", "l", "i", { noremap = true })
+-- vim.keymap.set("n", "m", "h", { noremap = true })
+-- vim.keymap.set("n", "n", "j", { noremap = true })
+-- vim.keymap.set("n", "e", "k", { noremap = true })
+-- vim.keymap.set("n", "i", "l", { noremap = true })
+--
+-- vim.keymap.set("n", "h", "m", { noremap = true })
+-- vim.keymap.set("n", "j", "n", { noremap = true })
+-- vim.keymap.set("n", "k", "e", { noremap = true })
+-- vim.keymap.set("n", "l", "i", { noremap = true })
+--
+-- vim.keymap.set("v", "m", "h", { noremap = true })
+-- vim.keymap.set("v", "n", "j", { noremap = true })
+-- vim.keymap.set("v", "e", "k", { noremap = true })
+-- vim.keymap.set("v", "i", "l", { noremap = true })
+--
+-- vim.keymap.set("v", "h", "m", { noremap = true })
+-- vim.keymap.set("v", "j", "n", { noremap = true })
+-- vim.keymap.set("v", "k", "e", { noremap = true })
+-- vim.keymap.set("v", "l", "i", { noremap = true })
 
 -- open file explorer
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)

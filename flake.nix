@@ -2,18 +2,11 @@
   description = "damarus Home-Manager flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.11";
+      url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland.url = "github:hyprwm/Hyprland";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
-    plugin-vim-razor.url = "github:jlcrochet/vim-razor";
-    plugin-vim-razor.flake = false;
 
     plugin-obsidian-nvim.url = "github:epwalsh/obsidian.nvim";
     plugin-obsidian-nvim.flake = false;
