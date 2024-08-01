@@ -40,6 +40,7 @@
       drawio # diagramming
 
       # utils
+      nh # yet another nix helper
       htop-vim # task viewer
       pavucontrol # volume control
       wl-clipboard # clipboard for wayland

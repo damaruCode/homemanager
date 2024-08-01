@@ -8,8 +8,8 @@
     };
     shellAliases = {
       # Nix 
-      uos = "sudo nixos-rebuild switch --flake ~/.config/nixos";
-      uhm = "home-manager switch --flake ~/.config/home-manager";
+      uos = "nh os switch ~/.config/nixos";
+      uhm = "nh home switch ~/.config/home-manager";
       ns = "nix-shell";
       ne = "nix-env";
       nv = "nix run ~/.config/nix-vim";
