@@ -41,6 +41,8 @@
 
       # utils
       nh # yet another nix helper
+      nvd # nix visualization
+      nix-output-monitor # nix visualisation
       htop-vim # task viewer
       pavucontrol # volume control
       wl-clipboard # clipboard for wayland
