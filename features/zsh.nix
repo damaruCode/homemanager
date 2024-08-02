@@ -10,7 +10,9 @@
       # Nix 
       uos = "nh os switch ~/.config/nixos";
       uhm = "nh home switch ~/.config/home-manager";
-      ns = "nix-shell";
+      nb = "nom build";
+      nd = "nom develop";
+      ns = "nom shell";
       ne = "nix-env";
       nv = "nix run ~/.config/nix-vim";
 
