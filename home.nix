@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   imports = [
-    ./features/hypr.nix # window manager config
     ./features/kitty.nix # terminal emulator config
     ./features/nvim.nix # editor config
     ./features/zsh.nix # shell config
@@ -14,13 +13,12 @@
   ];
 
   # custom module options
+  hyprland.enable = true;
+  hyprlock.enable = true;
+  hyprpaper.enable = true;
   rofi.enable = true;
 
   nixpkgs.config.allowUnfree = true;
-
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-25.9.0" # for obsidian
-  ];
 
   home = {
     username = "damaru";
