@@ -21,6 +21,7 @@
       # System  
       o = "xdg-open";
       n = "nvim";
+      c = "clear";
 
       # Git 
       gs = "git status";

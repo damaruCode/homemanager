@@ -7,9 +7,6 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    plugin-obsidian-nvim.url = "github:epwalsh/obsidian.nvim";
-    plugin-obsidian-nvim.flake = false;
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
