@@ -1,16 +1,5 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
-  nixpkgs.overlays = [
-    (final: prev: {
-      vimPlugins = prev.vimPlugins // {
-        obsidian-nvim = prev.vimUtils.buildVimPlugin {
-          name = "obsidian-nvim";
-          src = inputs.plugin-obsidian-nvim;
-        };
-      };
-    })
-  ];
-
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -26,7 +15,6 @@
       ${builtins.readFile ./nvim/plugins/fugitive.lua}
       ${builtins.readFile ./nvim/plugins/comment.lua}
       ${builtins.readFile ./nvim/plugins/lspzero.lua}
-      ${builtins.readFile ./nvim/plugins/obsidian.lua}
     '';
 
     plugins = with pkgs.vimPlugins; [
@@ -37,9 +25,9 @@
       undotree # save change history
       vim-fugitive # toggle git
       comment-nvim # comment code
-      copilot-vim # autocomplete ai
       vimtex # latex support
       plenary-nvim # dependency for telescope and obsidian
+      Coqtail # coq proof assistant
 
       # lsp
       lsp-zero-nvim
@@ -49,9 +37,6 @@
       luasnip
 
       nvim-treesitter.withAllGrammars
-
-      # from overlays
-      obsidian-nvim
     ];
 
     extraPackages = with pkgs; [
@@ -73,12 +58,6 @@
       clang-tools # c/c++
       rust-analyzer # rust
       texlab # latex
-      omnisharp-roslyn # c# 
-
-      # formater
-      nixpkgs-fmt # nix
-      luaformatter # lua
-      rustfmt # rust
     ];
 
     viAlias = true;

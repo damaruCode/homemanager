@@ -10,8 +10,6 @@
 
     plugin-obsidian-nvim.url = "github:epwalsh/obsidian.nvim";
     plugin-obsidian-nvim.flake = false;
-
-    # nix-vim.url = "github:damaruCode/nix-vim";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
@@ -21,6 +19,7 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           ./home.nix
+          ./modules
         ];
       };
     };

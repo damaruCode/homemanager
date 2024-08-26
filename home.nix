@@ -5,7 +5,6 @@
     ./features/kitty.nix # terminal emulator config
     ./features/nvim.nix # editor config
     ./features/zsh.nix # shell config
-    ./features/rofi.nix # app launcher config
     ./features/waybar.nix # status bar config
     ./features/zathura.nix # pdf reader config
     ./features/feh.nix # img viewer config
@@ -13,6 +12,9 @@
     ./features/fonts.nix # font config
     ./features/eduroam.nix # eduroam config
   ];
+
+  # custom module options
+  rofi.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 

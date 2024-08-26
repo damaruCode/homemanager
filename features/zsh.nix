@@ -11,23 +11,17 @@
       uos = "nh os switch ~/.config/nixos";
       uhm = "nh home switch ~/.config/home-manager";
       nb = "nom build";
-      nd = "nom develop";
+      ndev = "nom develop";
       ns = "nom shell";
+      ndiff = "nvd diff /nix/var/nix/profiles/system-{$1,$2}-link"; # todo
+      nc = "nh clean all --keep 3";
       ne = "nix-env";
       nv = "nix run ~/.config/nix-vim";
 
       # System  
       o = "xdg-open";
-      c = "clear";
-      t = "tree";
-
-      # Editor
       n = "nvim";
 
-      # Applications
-      z = "zathura";
-      f = "feh";
-    
       # Git 
       gs = "git status";
       ga = "git add";
