@@ -16,6 +16,7 @@
   hyprland.enable = true;
   hyprlock.enable = true;
   hyprpaper.enable = true;
+  nixvim.enable = false;
   rofi.enable = true;
 
   nixpkgs.config.allowUnfree = true;

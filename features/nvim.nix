@@ -58,6 +58,9 @@
       clang-tools # c/c++
       rust-analyzer # rust
       texlab # latex
+
+      libllvm
+      boost
     ];
 
     viAlias = true;
