@@ -2,7 +2,6 @@
 {
   imports = [
     ./features/kitty.nix # terminal emulator config
-    ./features/nvim.nix # editor config
     ./features/zsh.nix # shell config
     ./features/waybar.nix # status bar config
     ./features/zathura.nix # pdf reader config
@@ -16,7 +15,7 @@
   hyprland.enable = true;
   hyprlock.enable = true;
   hyprpaper.enable = true;
-  nixvim.enable = false;
+  nixvim.enable = true;
   rofi.enable = true;
 
   nixpkgs.config.allowUnfree = true;
