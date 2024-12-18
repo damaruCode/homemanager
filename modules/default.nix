@@ -1,5 +1,7 @@
-{ 
+{
   imports = [
+    ./anki.nix
+    ./dunst.nix
     ./hyprland.nix
     ./hyprlock.nix
     ./hyprpaper.nix

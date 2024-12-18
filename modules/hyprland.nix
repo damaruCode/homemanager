@@ -1,17 +1,28 @@
-{ config, lib, ... }:
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}:
 {
   options = {
-      hyprland.enable = lib.mkEnableOption "enables hyprland";
+    hyprland.enable = lib.mkEnableOption "enables hyprland";
   };
 
   config = lib.mkIf config.hyprland.enable {
+
+    home.packages = [
+      pkgs.hyprshot
+    ];
+
     wayland.windowManager.hyprland = {
       enable = true;
       settings = {
         monitor = [
           "eDP-1,1920x1080@144,0x0,1"
-          ",preferred,auto,1"
-        ];  
+          ",preferred,auto,1,mirror,eDP-1"
+          # ",preferred,auto,1"
+        ];
 
         exec-once = [
           "waybar & hyprpaper"
@@ -75,7 +86,7 @@
           "$mainMod SHIFT, F, fullscreen, 0"
           "$mainMod, Q, killactive, "
           "$mainMod, S, exec, hyprlock"
-          "$mainMod, H, exit, " 
+          "$mainMod, H, exit, "
           "$mainMod, D, exec, rofi -show drun"
 
           "$mainMod, N, movefocus, l"
@@ -107,6 +118,13 @@
           "$mainMod SHIFT, 8, movetoworkspace, 8"
           "$mainMod SHIFT, 9, movetoworkspace, 9"
           "$mainMod SHIFT, 0, movetoworkspace, 10"
+
+          # Screenshot a window
+          "$mainMod, PRINT, exec, hyprshot -m window"
+          # Screenshot a monitor
+          ", PRINT, exec, hyprshot -m output"
+          # Screenshot a region
+          "$mainMod SHIFT, PRINT, exec, hyprshot -m region"
         ];
       };
     };

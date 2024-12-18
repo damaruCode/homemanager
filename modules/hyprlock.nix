@@ -1,7 +1,7 @@
 { config, lib, ... }:
 {
   options = {
-      hyprlock.enable = lib.mkEnableOption "enables hyprlock";
+    hyprlock.enable = lib.mkEnableOption "enables hyprlock";
   };
 
   config = lib.mkIf config.hyprlock.enable {

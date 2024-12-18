@@ -12,6 +12,8 @@
   ];
 
   # custom module options
+  anki.enable = true;
+  dunst.enable = true;
   hyprland.enable = true;
   hyprlock.enable = true;
   hyprpaper.enable = true;
@@ -38,6 +40,7 @@
       krita # digital painting
       vlc # media player
       drawio # diagramming
+      mdp # md presenation tool
 
       # utils
       nh # yet another nix helper
