@@ -5,6 +5,7 @@
     ./hyprland.nix
     ./hyprlock.nix
     ./hyprpaper.nix
+    ./mattermost.nix
     ./nixvim.nix
     ./rofi.nix
   ];

@@ -1,9 +1,21 @@
 {
   programs.zsh = {
     enable = true;
+    initExtra = ''
+      # Function to switch and save the current path
+      function cd() {
+        builtin cd "$@";
+        echo "$PWD" > ~/.cwd;
+      }
+      export cd
+      alias cwd='cd "$(cat ~/.cwd)"'
+      cwd
+    '';
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" ];
+      plugins = [
+        "git"
+      ];
       theme = "nebirhos";
     };
     shellAliases = {

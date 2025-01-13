@@ -17,6 +17,7 @@
   hyprland.enable = true;
   hyprlock.enable = true;
   hyprpaper.enable = true;
+  mattermost.enable = true;
   nixvim.enable = true;
   rofi.enable = true;
 
