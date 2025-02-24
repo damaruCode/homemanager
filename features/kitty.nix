@@ -7,8 +7,8 @@
     };
     theme = "Tokyo Night Storm";
     keybindings = {
-        "ctrl+shift+return" = "new_tab";
-        "ctrl+shift+backspace" = "close_tab";
+      "ctrl+shift+return" = "new_tab";
+      "ctrl+shift+backspace" = "close_tab";
     };
   };
 }

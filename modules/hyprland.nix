@@ -20,8 +20,9 @@
       settings = {
         monitor = [
           "eDP-1,1920x1080@144,0x0,1"
-          ",preferred,auto,1,mirror,eDP-1"
-          # ",preferred,auto,1"
+          "desc:Dell Inc. DELL U2723QE GFCGH34,preferred,auto,2"
+          #",preferred,auto,1,mirror,eDP-1"
+          ",preferred,auto,1"
         ];
 
         exec-once = [
