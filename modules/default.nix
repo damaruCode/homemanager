@@ -2,11 +2,18 @@
   imports = [
     ./anki.nix
     ./dunst.nix
+    ./eduroam.nix
+    ./feh.nix
+    ./fonts.nix
     ./hyprland.nix
     ./hyprlock.nix
     ./hyprpaper.nix
+    ./kitty.nix
     ./mattermost.nix
     ./nixvim.nix
     ./rofi.nix
+    ./waybar.nix
+    ./zathura.nix
+    ./zsh.nix
   ];
 }

@@ -1,25 +1,21 @@
 { pkgs, ... }:
 {
-  imports = [
-    ./features/kitty.nix # terminal emulator config
-    ./features/zsh.nix # shell config
-    ./features/waybar.nix # status bar config
-    ./features/zathura.nix # pdf reader config
-    ./features/feh.nix # img viewer config
-    ./features/xdg.nix # defaults programs for file endings
-    ./features/fonts.nix # font config
-    ./features/eduroam.nix # eduroam config
-  ];
-
   # custom module options
   anki.enable = true;
   dunst.enable = true;
+  eduroam.enable = true;
+  feh.enable = true;
+  fonts.enable = true;
   hyprland.enable = true;
   hyprlock.enable = true;
   hyprpaper.enable = true;
+  kitty.enable = true;
   mattermost.enable = true;
   nixvim.enable = true;
   rofi.enable = true;
+  waybar.enable = true;
+  zathura.enable = true;
+  zsh.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
@@ -47,10 +43,15 @@
       nh # yet another nix helper
       nvd # nix visualization
       nix-output-monitor # nix visualisation
+      xdg-utils # filetype support
       htop-vim # task viewer
       pavucontrol # volume control
       wl-clipboard # clipboard for wayland
     ];
+  };
+
+  xdg.mimeApps = {
+    enable = true;
   };
 
   systemd.user.startServices = "sd-switch";

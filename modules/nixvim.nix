@@ -1,7 +1,12 @@
-{ inputs, lib, config, ... }:
+{
+  inputs,
+  lib,
+  config,
+  ...
+}:
 {
   options = {
-      nixvim.enable = lib.mkEnableOption "enables nixvim";
+    nixvim.enable = lib.mkEnableOption "enables nixvim";
   };
 
   config = lib.mkIf config.nixvim.enable {

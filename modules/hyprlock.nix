@@ -1,4 +1,8 @@
-{ config, lib, ... }:
+{
+  config,
+  lib,
+  ...
+}:
 {
   options = {
     hyprlock.enable = lib.mkEnableOption "enables hyprlock";
