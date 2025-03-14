@@ -1,7 +1,5 @@
 {
   imports = [
-    ./anki.nix
-    ./dunst.nix
     ./eduroam.nix
     ./feh.nix
     ./fonts.nix
@@ -9,7 +7,6 @@
     ./hyprlock.nix
     ./hyprpaper.nix
     ./kitty.nix
-    ./mattermost.nix
     ./nixvim.nix
     ./rofi.nix
     ./waybar.nix

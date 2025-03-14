@@ -1,8 +1,6 @@
 { pkgs, ... }:
 {
   # custom module options
-  anki.enable = true;
-  dunst.enable = true;
   eduroam.enable = true;
   feh.enable = true;
   fonts.enable = true;
@@ -10,7 +8,6 @@
   hyprlock.enable = true;
   hyprpaper.enable = true;
   kitty.enable = true;
-  mattermost.enable = true;
   nixvim.enable = true;
   rofi.enable = true;
   waybar.enable = true;
@@ -24,6 +21,7 @@
     homeDirectory = "/home/damaru";
     packages = with pkgs; [
       # standalone apps
+      anki # learning tool
       brave # browser
       slack # communication
       figma-linux # design
@@ -38,6 +36,8 @@
       vlc # media player
       drawio # diagramming
       mdp # md presenation tool
+      mattermost # communication
+      mattermost-desktop # communication
 
       # utils
       nh # yet another nix helper
@@ -47,10 +47,15 @@
       htop-vim # task viewer
       pavucontrol # volume control
       wl-clipboard # clipboard for wayland
+      texliveFull # latex utils
     ];
   };
 
   xdg.mimeApps = {
+    enable = true;
+  };
+
+  services.dunst = {
     enable = true;
   };
 
