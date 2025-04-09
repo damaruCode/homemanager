@@ -179,11 +179,11 @@
         "nixvim": "nixvim_2"
       },
       "locked": {
-        "lastModified": 1744202518,
-        "narHash": "sha256-t8KLqHJAX6G2ZzLJz2NOY3ZmX8sPkKILqP8yd9sg+YI=",
+        "lastModified": 1744205514,
+        "narHash": "sha256-A2s9giIVROqHLb2UIrKfL/YehOuu76sHMzGW94deeVQ=",
         "owner": "damaruCode",
         "repo": "nixvim",
-        "rev": "8202fafd0d5a6ec90da077ead855366a3bec83f4",
+        "rev": "3571edd82909de56f5814eeeb8c2e35cdb6737a4",
         "type": "github"
       },
       "original": {
