@@ -30,23 +30,23 @@
       };
       shellAliases = {
 
-        # Nix 
+        # Nix
         uos = "nh os switch ~/.config/nixos";
         uhm = "nh home switch ~/.config/homemanager";
+        nfu = "nix flake update";
+        nr = "nix run";
         nb = "nom build";
-        ndev = "nom develop";
+        nd = "nom develop";
         ns = "nom shell";
         ndiff = "nvd diff /nix/var/nix/profiles/system-{$1,$2}-link"; # todo
         nc = "nh clean all --keep 3";
-        ne = "nix-env";
-        nv = "nix run ~/.config/nixvim";
 
-        # System  
+        # System
         c = "clear";
         o = "xdg-open";
         n = "nvim";
 
-        # Git 
+        # Git
         gs = "git status";
         ga = "git add";
         gA = "git add -A";
