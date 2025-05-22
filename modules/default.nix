@@ -9,6 +9,7 @@
     ./kitty.nix
     ./nixvim.nix
     ./rofi.nix
+    ./sioyek.nix
     ./waybar.nix
     ./zathura.nix
     ./zsh.nix

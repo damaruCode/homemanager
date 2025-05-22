@@ -10,6 +10,7 @@
   kitty.enable = true;
   nixvim.enable = true;
   rofi.enable = true;
+  sioyek.enable = true;
   waybar.enable = true;
   zathura.enable = true;
   zsh.enable = true;
