@@ -12,7 +12,7 @@
     services.hypridle = {
       enable = true;
       settings = {
-        lock_cmd = "hyprlock";
+        lock_cmd = ""; # TODO
       };
     };
   };
