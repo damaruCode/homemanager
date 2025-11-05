@@ -4,6 +4,7 @@
   eduroam.enable = true;
   feh.enable = true;
   fonts.enable = true;
+  hypridle.enable = true;
   hyprland.enable = true;
   hyprlock.enable = true;
   hyprpaper.enable = true;

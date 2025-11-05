@@ -3,6 +3,7 @@
     ./eduroam.nix
     ./feh.nix
     ./fonts.nix
+    ./hypridle.nix
     ./hyprland.nix
     ./hyprlock.nix
     ./hyprpaper.nix
