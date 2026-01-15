@@ -14,7 +14,7 @@
       fontconfig.enable = true;
     };
     home.packages = [
-      (pkgs.nerdfonts.override { fonts = [ "CascadiaCode" ]; })
+      pkgs.nerd-fonts.caskaydia-cove
     ];
   };
 }

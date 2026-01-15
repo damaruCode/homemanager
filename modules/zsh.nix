@@ -11,7 +11,7 @@
   config = lib.mkIf config.zsh.enable {
     programs.zsh = {
       enable = true;
-      initExtra = ''
+      initContent = ''
         # Function to switch and save the current path
         function cd() {
           builtin cd "$@";

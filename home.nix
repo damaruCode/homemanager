@@ -50,6 +50,7 @@
       pavucontrol # volume control
       wl-clipboard # clipboard for wayland
       texliveFull # latex utils
+      chatgpt-cli # shit gpt
     ];
   };
 

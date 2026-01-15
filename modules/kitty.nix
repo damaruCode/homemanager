@@ -1,5 +1,6 @@
 {
   config,
+  pkgs,
   lib,
   ...
 }:
@@ -12,10 +13,11 @@
     programs.kitty = {
       enable = true;
       font = {
-        name = "CaskaydiaCoveNerdFont";
+        name = "CaskaydiaCove";
+        package = pkgs.nerd-fonts.caskaydia-cove;
         size = 18;
       };
-      theme = "Tokyo Night Storm";
+      themeFile = "tokyo_night_storm";
       keybindings = {
         "ctrl+shift+return" = "new_tab";
         "ctrl+shift+backspace" = "close_tab";

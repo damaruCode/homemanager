@@ -63,15 +63,13 @@
           active_opacity = 0.9;
           inactive_opacity = 0.9;
           fullscreen_opacity = 0.9;
-          drop_shadow = false;
+          shadow = {
+            enabled = false;
+          };
         };
 
         animations = {
           enabled = false;
-        };
-
-        gestures = {
-          workspace_swipe = false;
         };
 
         misc = {
