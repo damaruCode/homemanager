@@ -9,6 +9,7 @@
     ./hyprpaper.nix
     ./kitty.nix
     ./nixvim.nix
+    ./openshot.nix
     ./rofi.nix
     ./sioyek.nix
     ./waybar.nix

@@ -10,6 +10,7 @@
   hyprpaper.enable = true;
   kitty.enable = true;
   nixvim.enable = true;
+  # openshot.enable = true; # insecure
   rofi.enable = true;
   sioyek.enable = true;
   waybar.enable = true;
