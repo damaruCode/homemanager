@@ -11,6 +11,7 @@
     ./nixvim.nix
     ./openshot.nix
     ./rofi.nix
+    ./shotcut.nix
     ./sioyek.nix
     ./waybar.nix
     ./zathura.nix

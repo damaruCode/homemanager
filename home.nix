@@ -12,6 +12,7 @@
   nixvim.enable = true;
   # openshot.enable = true; # insecure
   rofi.enable = true;
+  shotcut.enable = true;
   sioyek.enable = true;
   waybar.enable = true;
   zathura.enable = true;
