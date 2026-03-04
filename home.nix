@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   # custom module options
+  direnv.enable = true;
   eduroam.enable = true;
   feh.enable = true;
   fonts.enable = true;

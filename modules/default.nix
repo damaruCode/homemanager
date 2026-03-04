@@ -1,5 +1,6 @@
 {
   imports = [
+    ./direnv.nix
     ./eduroam.nix
     ./feh.nix
     ./fonts.nix
