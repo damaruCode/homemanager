@@ -20,7 +20,7 @@
       settings = {
         monitor = [
           "eDP-1,1920x1080@144,0x0,1"
-          "desc:Dell Inc. DELL U2723QE GFCGH34,3840x2160@60,auto,2"
+          "desc:Dell Inc. DELL U2723QE GFCGH34,3840x2160@60,-1920x0,2"
           ",preferred,auto,1,mirror,eDP-1"
         ];
 
