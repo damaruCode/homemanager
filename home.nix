@@ -43,6 +43,7 @@
       mdp # md presenation tool
       mattermost # communication
       mattermost-desktop # communication
+      claude-code # ai
 
       # utils
       nh # yet another nix helper
