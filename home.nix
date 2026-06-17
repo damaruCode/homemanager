@@ -31,7 +31,6 @@
       slack # communication
       figma-linux # design
       discord # communication
-      webcord # discord in browser
       obsidian # note taking
       libreoffice # office suite
       gnuplot # plotting
